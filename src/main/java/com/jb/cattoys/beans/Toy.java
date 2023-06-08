@@ -1,5 +1,6 @@
 package com.jb.cattoys.beans;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -20,6 +21,7 @@ public class Toy {
     private int id;
     private String name;
     @ToString.Exclude
+    @JsonIgnore
     @ManyToOne
     private Cat cat;
 

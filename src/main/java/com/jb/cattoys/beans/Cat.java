@@ -20,7 +20,7 @@ public class Cat {
     private String name;
     @Enumerated(EnumType.STRING)
     private Color color;
-    private Double weight;
+    private double weight;
     @OneToMany(mappedBy = "cat",cascade = CascadeType.ALL)
     private List<Toy> toys;
 
